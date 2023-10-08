@@ -52,6 +52,7 @@ if (!localStorage.getItem("opened")) {
 window.onload = function () {
   if (localStorage.getItem("opened")) {
     audioIconWrapper.style.display = "flex";
+    song.pause();
     song.volume = 0.2;
   }
 };
